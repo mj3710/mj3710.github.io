@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 연습2 </title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <table border="1" style="width: 50%">
+                <tr>
+                    <th>이름</th>
+                    <th>점수</th>
+                </tr>
+                <tr>
+                    <td>홍민성</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <h3>오디오 자동재생</h3>
+    <audio src="파일명" controls loop autoplay></audio>
+    <h3>오디오 수동재생</h3>
+    <audio src="파일명" controls></audio>
+
+    <h3>비디오 자동재생</h3>
+    <video src="파일명" controls loop autoplay width="300" height="250"></video>
+    <h3>비디오 수동재생</h3>
+    <video src="파일명" controls width="300" height="250"></video>
+    <h3>비디오 다중재생 파일이 웹사이트에 있는 경우</h3>
+    <video controls autoplay width="300" height="250" poster="썸넬">
+        <source src="주소" type="video/mp4; codecs="avc1, mp4a">
+        비디오 파일을 재생할 수 없습니다.
+    </video>
+
+    <h3>겟 방식</h3>
+    <form name="INPUT1" action="page.jsp" method="get">
+        <input type="text" name="user">
+        <input type="text" name="dept">
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <h2>텍스트 공간입력 양식</h2>
+    <form>
+        <textarea cols="50" rows="5">텍스트를 작성하는 공간입니다.</textarea>
+        <p></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+
+    <h2>입력폼 경제 만들어 그룹으로 묶기</h2>
+    <form>
+        <fieldset>
+            <legend>개인정보입력</legend>
+            <p>이름: <input type="text" name="name"></p>
+            <p>학교: <input type="text" name="school"></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+</body>
+    
+
+</html>
